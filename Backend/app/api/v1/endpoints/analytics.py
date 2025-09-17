@@ -18,7 +18,7 @@ async def get_detailed_analytics(current_user: dict = Depends(get_current_active
 # app/api/v1/endpoints/reports.py
 
 from fastapi import APIRouter, Depends
-from app.schemas.analytics import ReportRequest
+from app.schemas.report import ReportRequest
 from app.core.permissions import permission_service
 from app.api.deps import get_current_active_user
 
